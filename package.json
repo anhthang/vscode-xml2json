@@ -1,0 +1,63 @@
+{
+  "name": "xml2json",
+  "displayName": "xml2json",
+  "description": "convert xml to json",
+  "version": "0.1.0",
+  "publisher": "buianhthang",
+  "engines": {
+    "vscode": "^1.17.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:xml2json.xml2js",
+    "onCommand:xml2json.xmlbuilder"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "xml2json.xml2js",
+        "title": "XML to JSON: xml2js format"
+      },
+      {
+        "command": "xml2json.xmlbuilder",
+        "title": "XML to JSON: xmlbuilder format"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.5.3",
+    "vscode": "^1.1.5",
+    "@types/node": "^7.0.43",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {
+    "copy-paste": "^1.3.0",
+    "xml2js": "^0.4.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buianhthang/vscode-xml2json.git"
+  },
+  "keywords": [
+    "vscode",
+    "xml2json",
+    "xml2js",
+    "xmlbuilder"
+  ],
+  "author": "Anh Thang Bui <buianhthang89@gmail.com> (https://anhthang.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buianhthang/vscode-xml2json/issues"
+  },
+  "homepage": "https://github.com/buianhthang/vscode-xml2json#readme"
+}
