@@ -1,8 +1,8 @@
 {
   "name": "xml2json",
-  "displayName": "xml2json",
-  "description": "convert xml to json",
-  "version": "0.1.0",
+  "displayName": "XML to JSON",
+  "description": "Convert XML from clipboard or current document/selection to JSON",
+  "version": "0.2.0",
   "publisher": "buianhthang",
   "engines": {
     "vscode": "^1.17.0"
@@ -12,18 +12,23 @@
   ],
   "activationEvents": [
     "onCommand:xml2json.xml2js",
-    "onCommand:xml2json.xmlbuilder"
+    "onCommand:xml2json.xmlbuilder",
+    "onCommand:xml2json.clipboard"
   ],
   "main": "./out/extension",
   "contributes": {
     "commands": [
       {
         "command": "xml2json.xml2js",
-        "title": "XML to JSON: xml2js format"
+        "title": "XML to JSON: Format: xml2js"
       },
       {
         "command": "xml2json.xmlbuilder",
-        "title": "XML to JSON: xmlbuilder format"
+        "title": "XML to JSON: Format: xmlbuilder"
+      },
+      {
+        "command": "xml2json.clipboard",
+        "title": "XML to JSON: From Clipboard"
       }
     ]
   },
