@@ -13,7 +13,7 @@ Clear the Search box at the top of the Extensions View and type `XML to JSON`
 ## Preview
 
 <p align="center">
-  <img src="images/preview.gif" alt="png">
+  <img src="https://github.com/buianhthang/vscode-xml2json/raw/master/images/preview.gif" alt="png">
 </p>
 
 ## Icon Credit
