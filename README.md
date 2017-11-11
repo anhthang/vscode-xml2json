@@ -10,8 +10,15 @@ Are you using [Code](https://code.visualstudio.com/) and working with XML builde
 ## Install
 Clear the Search box at the top of the Extensions View and type `XML to JSON`
 
-## Usage
-- Invoke command pallate (Cmd/Ctrl + Shift + P)
-- Type `XML to JSON`, choose expected format, hit enter!
+## Preview
 
-**Enjoy!**
+<p align="center">
+  <img src="images/preview.gif" alt="png">
+</p>
+
+## Icon Credit
+- XML, JSON file icon by [Smashicons] from [Flaticon] - [Flaticon Basic License]
+
+[Flaticon]: https://www.flaticon.com
+[Smashicons]: https://www.flaticon.com/authors/smashicons
+[Flaticon Basic License]: https://file000.flaticon.com/downloads/license/license.pdf
