@@ -1,5 +1,5 @@
 # XML to JSON
-[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/buianhthang.xml2json.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json) [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/d/buianhthang.xml2json.svg?style=flat-square)]() [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/r/buianhthang.xml2json.svg?style=flat-square)]()
+[![Marketplace](https://img.shields.io/vscode-marketplace/v/buianhthang.xml2json.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json) ![Downloads](https://img.shields.io/vscode-marketplace/d/buianhthang.xml2json.svg?style=flat-square) ![Rating](https://img.shields.io/vscode-marketplace/r/buianhthang.xml2json.svg?style=flat-square)
 
 > Convert XML from clipboard or current document/selection to JSON
 
