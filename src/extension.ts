@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
             return vscode.window.showQuickPick([
                 <vscode.QuickPickItem>{
                     label: 'xml2js',
-                    detail: 'convert to xml2js default format'
+                    detail: 'convert to xml2js format'
                 },
                 <vscode.QuickPickItem>{
                     label: 'xmlbuilder',
