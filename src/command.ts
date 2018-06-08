@@ -9,7 +9,7 @@ const CLIPBOARD_ERROR = 'Clipboard is invalid XML???'
 
 export class Command {
 
-    static convertDocument(builder): void {
+    static convertDocument(): void {
         const activeEditor = vscode.window.activeTextEditor
         if (activeEditor && activeEditor.selection && activeEditor.selection.active) {
             activeEditor.edit(editor => {
@@ -28,12 +28,12 @@ export class Command {
                     }
                 }
     
-                this._parser(builder, input, callback)
+                this._parser(input, callback)
             })
         }
     }
 
-    static convertClipboard(builder): void {
+    static convertClipboard(): void {
         const activeEditor = vscode.window.activeTextEditor
         if (activeEditor && activeEditor.selection && activeEditor.selection.active) {
             activeEditor.edit(editor => {
@@ -52,12 +52,13 @@ export class Command {
                     }
                 }
     
-                this._parser(builder, input, callback)
+                this._parser(input, callback)
             })
         }
     }
 
-    static _parser(builder, input, callback): void {
+    static _parser(input, callback): void {
+        const builder = Config.preferStyle
         switch (builder) {
             case 'xml2js':
                 parseString(input, callback)
