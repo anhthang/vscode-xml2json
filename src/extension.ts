@@ -3,6 +3,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode'
 import { Command } from './command'
+import { Config } from './config'
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -15,26 +16,37 @@ export function activate(context: vscode.ExtensionContext) {
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
-    const commands = [
-        vscode.commands.registerCommand('xml2json.xml2js', () => Command.convertDocument('xml2js')),
-        vscode.commands.registerCommand('xml2json.xmlbuilder', () => Command.convertDocument('xmlbuilder')),
-        vscode.commands.registerCommand('xml2json.clipboard', () => {
-            return vscode.window.showQuickPick([
-                <vscode.QuickPickItem>{
-                    label: 'xml2js',
-                    detail: 'convert to xml2js format'
-                },
-                <vscode.QuickPickItem>{
-                    label: 'xmlbuilder',
-                    detail: 'convert to xmlbuilder format'
-                }
-            ]).then((choice) => {
-                if (choice && choice.label) {
-                    return Command.convertClipboard(choice.label)
-                }
+
+    let commands = []
+    const preferStyle = Config.preferStyle
+    if (preferStyle) {
+        vscode.commands.executeCommand('setContext', 'xml2json:preferStyleSelected', preferStyle)
+        commands = [
+            vscode.commands.registerCommand(`xml2json.${preferStyle}`, () => Command.convertDocument(preferStyle)),
+            vscode.commands.registerCommand(`xml2json.clipboard`, () => Command.convertClipboard(preferStyle)),
+        ]
+    } else {
+        commands = [
+            vscode.commands.registerCommand('xml2json.xml2js', () => Command.convertDocument('xml2js')),
+            vscode.commands.registerCommand('xml2json.xmlbuilder', () => Command.convertDocument('xmlbuilder')),
+            vscode.commands.registerCommand('xml2json.clipboard', () => {
+                return vscode.window.showQuickPick([
+                    <vscode.QuickPickItem>{
+                        label: 'xml2js',
+                        detail: 'convert to xml2js format'
+                    },
+                    <vscode.QuickPickItem>{
+                        label: 'xmlbuilder',
+                        detail: 'convert to xmlbuilder format'
+                    }
+                ]).then((choice) => {
+                    if (choice && choice.label) {
+                        return Command.convertClipboard(choice.label)
+                    }
+                })
             })
-        })
-    ]
+        ]
+    }
 
     context.subscriptions.push(...commands)
 }

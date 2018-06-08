@@ -1,5 +1,6 @@
 import * as vscode from 'vscode'
 import { Document } from './document'
+import { Config } from './config'
 const { parseString } = require('xml2js')
 const cp = require('copy-paste')
 
@@ -62,12 +63,8 @@ export class Command {
                 parseString(input, callback)
                 break
             case 'xmlbuilder':
-                const opts = {
-                    charkey: '#text',
-                    explicitArray: false,
-                    mergeAttrs: true,
-                    attrNameProcessors: [str => `@${str}`]
-                }
+            case 'custom':
+                const opts = Config[builder]
                 parseString(input, opts, callback)
                 break
         }
