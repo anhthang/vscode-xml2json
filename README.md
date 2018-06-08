@@ -11,6 +11,15 @@ Here are just some of the features that XML to JSON provides:
 - Convert XML from document or selection to JSON
 - Convert XML from clipboard to JSON
 
+## Change Log
+See the [release notes](https://github.com/buianhthang/vscode-xml2json/blob/master/CHANGELOG.md "Open Release Notes") for the full set of changes
+
+## Preview
+
+<p align="center">
+  <img src="https://github.com/buianhthang/vscode-xml2json/raw/master/images/preview.gif" alt="png">
+</p>
+
 ## Configuration
 
 You can choose default settings by `preferStyle` config. Default `xml2js`. Available options: `xml2js`, `xmlbuilder`, `custom`.
@@ -46,21 +55,12 @@ valueProcessors(*)|null|Allows the addition of element value processing function
 
 ### Note
 (*): These configuration is not supported this time due to Code extension only support `array`, `boolean`, `integer`, `null`, `number`, `object`, `string`.
-## Install
-Clear the Search box at the top of the Extensions View and type `XML to JSON`
 
-## Preview
+## Screenshots
 
 <p align="center">
   <img src="https://github.com/buianhthang/vscode-xml2json/raw/master/images/command.png" alt="png"> <img src="https://github.com/buianhthang/vscode-xml2json/raw/master/images/context.png" alt="png">
 </p>
-
-<p align="center">
-  <img src="https://github.com/buianhthang/vscode-xml2json/raw/master/images/preview.gif" alt="png">
-</p>
-
-## Change Log
-See the [release notes](https://github.com/buianhthang/vscode-xml2json/blob/master/CHANGELOG.md "Open Release Notes") for the full set of changes
 
 ## Icon Credit
 XML, JSON file icon by [Smashicons] from [Flaticon] - [Flaticon Basic License]
