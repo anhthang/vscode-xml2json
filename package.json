@@ -24,11 +24,11 @@
     "commands": [
       {
         "command": "xml2json.document",
-        "title": "XML to JSON from selection document"
+        "title": "XML to JSON: Convert from selection or document"
       },
       {
         "command": "xml2json.clipboard",
-        "title": "XML to JSON from clipboard"
+        "title": "XML to JSON: Convert from clipboard"
       }
     ],
     "menus": {
