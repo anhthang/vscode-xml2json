@@ -31,6 +31,13 @@
         "title": "XML to JSON from clipboard"
       }
     ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "xml2json.document"
+        }
+      ]
+    },
     "configuration":{
       "properties": {
         "xml2json.preferStyle": {
