@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [1.1.0] - 2018-07-07
+### Added
+- Unescape string before calling parser
+
 ## [1.0.0] - 2018-06-08
 ### Added
 - Adding configuration to select prefer style (default: xml2js default options)
