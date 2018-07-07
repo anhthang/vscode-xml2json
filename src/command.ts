@@ -3,6 +3,7 @@ import { Document } from './document'
 import { Config } from './config'
 const { parseString } = require('xml2js')
 const cp = require('copy-paste')
+const unescape = require('lodash.unescape')
 
 const DOCUMENT_ERROR = 'Selection or document is invalid XML???'
 const CLIPBOARD_ERROR = 'Clipboard is invalid XML???'
@@ -59,6 +60,8 @@ export class Command {
 
     static _parser(input, callback): void {
         const builder = Config.preferStyle
+        input = unescape(input)
+
         switch (builder) {
             case 'xml2js':
                 parseString(input, callback)
