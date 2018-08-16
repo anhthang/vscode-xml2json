@@ -2,7 +2,7 @@
   "name": "xml2json",
   "displayName": "XML to JSON",
   "description": "Convert XML from clipboard or current document/selection to JSON",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "buianhthang",
   "engines": {
     "vscode": "^1.17.0"
@@ -35,6 +35,9 @@
       "editor/context": [
         {
           "command": "xml2json.document"
+        },
+        {
+          "command": "xml2json.clipboard"
         }
       ]
     },
