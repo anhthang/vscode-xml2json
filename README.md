@@ -1,7 +1,8 @@
 # XML to JSON
-[![Marketplace](https://img.shields.io/vscode-marketplace/v/buianhthang.xml2json.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json) ![Downloads](https://img.shields.io/vscode-marketplace/d/buianhthang.xml2json.svg?style=flat-square) ![Rating](https://img.shields.io/vscode-marketplace/r/buianhthang.xml2json.svg?style=flat-square)
 
 > Convert XML from clipboard or current document/selection to JSON
+
+[![marketplace](https://flat.badgen.net/vs-marketplace/v/buianhthang.xml2json)](https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json) ![installs](https://flat.badgen.net/vs-marketplace/i/buianhthang.xml2json) ![downloads](https://flat.badgen.net/vs-marketplace/d/buianhthang.xml2json) ![rating](https://flat.badgen.net/vs-marketplace/rating/buianhthang.xml2json)
 
 Are you using [Code](https://code.visualstudio.com/) and working with XML builder tools day by day?
 
