@@ -2,7 +2,7 @@ import * as vscode from 'vscode'
 import { Document } from './document'
 import { Config } from './config'
 const { parseString } = require('xml2js')
-const cp = require('copy-paste')
+const clipboardy = require('clipboardy')
 const unescape = require('lodash.unescape')
 
 const DOCUMENT_ERROR = 'Selection or document is invalid XML???'
@@ -39,7 +39,8 @@ export class Command {
         if (activeEditor && activeEditor.selection && activeEditor.selection.active) {
             activeEditor.edit(editor => {
                 const select = activeEditor.document.getText(activeEditor.selection)
-                let input = cp.paste()
+
+                let input = clipboardy.readSync()
                 const callback = (err, result) => {
                     if (err || !result) {
                         vscode.window.showErrorMessage(CLIPBOARD_ERROR)
