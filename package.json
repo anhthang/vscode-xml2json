@@ -213,13 +213,13 @@
     "test": "npm run compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^10.12.24",
-    "typescript": "^3.3.3",
-    "vscode": "^1.1.29"
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.14.6",
+    "typescript": "^3.4.5",
+    "vscode": "^1.1.33"
   },
   "dependencies": {
-    "clipboardy": "^1.2.3",
+    "clipboardy": "^2.0.0",
     "lodash.unescape": "^4.0.1",
     "xml2js": "^0.4.19"
   },
