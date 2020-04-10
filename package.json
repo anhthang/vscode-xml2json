@@ -43,7 +43,7 @@
     },
     "configuration": {
       "properties": {
-        "xml2json.preferStyle": {
+        "xml2json.defaultSettings": {
           "type": "string",
           "default": "xml2js",
           "enum": [
@@ -51,7 +51,7 @@
             "xmlbuilder",
             "custom"
           ],
-          "description": "Choose your prefer default settings or config your custom."
+          "description": "Choose your default settings or config your custom."
         },
         "xml2json.options": {
           "type": "object",

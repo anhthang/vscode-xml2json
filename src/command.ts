@@ -60,7 +60,7 @@ export class Command {
     }
 
     static _parser(input, callback): void {
-        const builder = Config.preferStyle
+        const builder = Config.defaultSettings
         input = unescape(input)
 
         switch (builder) {

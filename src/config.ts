@@ -32,8 +32,8 @@ class ConfigReader {
     //     return vscode.workspace.getConfiguration('xml2json').get<T>(key)
     // }
 
-    get preferStyle(): string {
-        return vscode.workspace.getConfiguration('xml2json').get('preferStyle')
+    get defaultSettings(): string {
+        return vscode.workspace.getConfiguration('xml2json').get('defaultSettings')
     }
 
     get custom(): object {

@@ -23,9 +23,10 @@ See the [release notes](https://github.com/buianhthang/vscode-xml2json/blob/mast
 
 ## Configuration
 
-You can choose default settings by `preferStyle` config. Default `xml2js`. Available options: `xml2js`, `xmlbuilder`, `custom`.
+By default, it's following `xml2js` default options. If you wanna change, you can choose one of pre-defined options (eg: `xmlbuilder`) or select `custom` and do it by yourself in `settings.json`
 
-If you want to use your configuration options, you can change it to `custom` and following below configable options (same as [xml2js](https://npmjs.com/package/xml2js) supported)
+**Availablie options:**
+> Following [xml2js](https://npmjs.com/package/xml2js)
 
 |Name | Default | Description
 |-----|---------|------------

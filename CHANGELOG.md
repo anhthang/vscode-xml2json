@@ -18,7 +18,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [1.0.0] - 2018-06-08
 ### Added
-- Adding configuration to select prefer style (default: xml2js default options)
+- Adding configuration to select default options (default: xml2js default options)
 - Able to add your customize for xml2js options
 - Adding context menu for convert XML to JSON from selection or document
 
