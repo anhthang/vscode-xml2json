@@ -12,18 +12,28 @@ Here are just some of the features that XML to JSON provides:
 - Convert XML from document or selection to JSON
 - Convert XML from clipboard to JSON
 
-## Change Log
+## 📝 Changelog
 See the [release notes](https://github.com/buianhthang/vscode-xml2json/blob/master/CHANGELOG.md "Open Release Notes") for the full set of changes
 
-## Preview
+## 🏙 Preview
 
 <p align="center">
   <img src="https://github.com/buianhthang/vscode-xml2json/raw/master/images/preview.gif" alt="png">
 </p>
 
-## Configuration
+## 🔧 Configuration
 
-By default, it's following `xml2js` default options. If you wanna change, you can choose one of pre-defined options (eg: `xmlbuilder`) or select `custom` and do it by yourself in `settings.json`
+By default, it's following `xml2js` default options. If you wanna change, choose one of pre-defined options (eg: `xmlbuilder`) or select `custom` and edit in `settings.json`. Below is an example:
+```json
+{
+    "xml2json.defaultSettings": "custom",
+    "xml2json.options": {
+        "attrkey": "@",
+        "explicitArray": false,
+        "mergeAttrs": true
+    }
+}
+```
 
 **Availablie options:**
 > Following [xml2js](https://npmjs.com/package/xml2js)
@@ -58,13 +68,13 @@ valueProcessors(*)|null|Allows the addition of element value processing function
 ### Note
 (*): These configuration is not supported this time due to Code extension only support `array`, `boolean`, `integer`, `null`, `number`, `object`, `string`.
 
-## Screenshots
+## 📸 Screenshots
 
 <p align="center">
   <img src="https://github.com/buianhthang/vscode-xml2json/raw/master/images/command.png" alt="png"> <img src="https://github.com/buianhthang/vscode-xml2json/raw/master/images/context.png" alt="png">
 </p>
 
-## Icon Credit
+## 📝 Icon Credit
 XML, JSON file icon by [Smashicons] from [Flaticon] - [Flaticon Basic License]
 
 [Flaticon]: https://www.flaticon.com
