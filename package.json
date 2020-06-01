@@ -16,8 +16,7 @@
     "theme": "dark"
   },
   "activationEvents": [
-    "onCommand:xml2json.document",
-    "onCommand:xml2json.clipboard"
+    "*"
   ],
   "main": "./out/extension",
   "contributes": {

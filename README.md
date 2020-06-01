@@ -2,7 +2,7 @@
 
 > Convert XML from clipboard or current document/selection to JSON
 
-[![marketplace](https://flat.badgen.net/vs-marketplace/v/buianhthang.xml2json)](https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json) ![installs](https://flat.badgen.net/vs-marketplace/i/buianhthang.xml2json) ![downloads](https://flat.badgen.net/vs-marketplace/d/buianhthang.xml2json) ![rating](https://flat.badgen.net/vs-marketplace/rating/buianhthang.xml2json)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/buianhthang.xml2json?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=buianhthang.xml2json) ![Installs](https://img.shields.io/visual-studio-marketplace/i/buianhthang.xml2json?style=for-the-badge) ![Downloads](https://img.shields.io/visual-studio-marketplace/d/buianhthang.xml2json?style=for-the-badge) ![Rating](https://img.shields.io/visual-studio-marketplace/r/buianhthang.xml2json?style=for-the-badge)
 
 Are you using [Code](https://code.visualstudio.com/) and working with XML builder tools day by day?
 
