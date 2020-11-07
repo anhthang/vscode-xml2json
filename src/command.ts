@@ -3,7 +3,6 @@ import { Document } from './document'
 import { Config } from './config'
 const { parseString } = require('xml2js')
 const clipboardy = require('clipboardy')
-const unescape = require('lodash.unescape')
 
 const DOCUMENT_ERROR = 'Selection or document is invalid XML???'
 const CLIPBOARD_ERROR = 'Clipboard is invalid XML???'
