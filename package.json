@@ -217,7 +217,6 @@
   },
   "dependencies": {
     "clipboardy": "2.3.0",
-    "lodash.unescape": "4.0.1",
     "xml2js": "0.4.23"
   },
   "repository": {

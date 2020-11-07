@@ -16,7 +16,7 @@ export class Command {
             activeEditor.edit(editor => {
                 const select = activeEditor.document.getText(activeEditor.selection)
                 let input = select || activeEditor.document.getText()
-                const callback = (err, result) => {
+                const callback = (err: any, result: any) => {
                     if (err || !result) {
                         vscode.window.showErrorMessage(DOCUMENT_ERROR)
                     } else {
@@ -41,7 +41,7 @@ export class Command {
                 const select = activeEditor.document.getText(activeEditor.selection)
 
                 let input = clipboardy.readSync()
-                const callback = (err, result) => {
+                const callback = (err: any, result: any) => {
                     if (err || !result) {
                         vscode.window.showErrorMessage(CLIPBOARD_ERROR)
                     } else {
@@ -59,9 +59,8 @@ export class Command {
         }
     }
 
-    static _parser(input, callback): void {
+    static _parser(input: string, callback: any): void {
         const builder = Config.defaultSettings
-        input = unescape(input)
 
         switch (builder) {
             case 'xml2js':
