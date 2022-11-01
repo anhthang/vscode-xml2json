@@ -41,7 +41,7 @@ class ConfigReader {
         const customConfig = vscode.workspace.getConfiguration('xml2json.options')
         options.forEach(key => {
             const val = customConfig.get(key)
-            if (val) {
+            if (typeof val !== 'undefined') {
                 config[key] = val
             }
         })
